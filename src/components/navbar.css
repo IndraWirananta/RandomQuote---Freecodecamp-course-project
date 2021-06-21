@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
+.nav_links {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: rgb(216, 216, 216);
+  padding-right: 2vw;
+}
+
+#logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.2vw;
+  color: rgb(255, 100, 34);
+  padding-left: 2vw;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+#logo small {
+  padding-left: 1vw;
+
+  display: none;
+}
+
+#logo:hover {
+  color: rgb(255, 0, 0) !important;
+}
+
+#logo small:hover {
+  display: inline-flex;
+}
+
+.nav_links li {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 0px 2vw;
+}
+
+.nav_links li a {
+  color: rgb(216, 216, 216);
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: rgb(255, 55, 55) !important;
+}
+
+.navbar {
+  border-radius: 0% !important;
+  border: none !important;
+  padding: none !important;
+  background-color: rgba(40, 40, 40, 1);
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  box-shadow: 1px 1px 4px 0px rgba(35, 35, 35, 1);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#divider {
+  flex: 1;
+}
+
+#hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+  margin-right: 3vw;
+}
+
+.hamburger-line {
+  border: none;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  width: 25px;
+  height: 2px;
+  background: white;
+}
+#hamburger:active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .nav_links li {
+    display: none;
+  }
+
+  #divider {
+    display: none;
+  }
+
+  .nav_links {
+    display: none;
+  }
+
+  #logo {
+    font-size: 1em;
+    padding-left: 0vw;
+    margin-right: 15vw;
+    margin-left: 2vw;
+  }
+
+  #hamburger {
+    display: flex;
+    margin-left: 11vw;
+  }
+}

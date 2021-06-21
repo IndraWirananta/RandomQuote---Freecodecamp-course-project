@@ -1,0 +1,46 @@
+.box {
+    display: block;
+    text-align: center;
+    height: 500px;
+    transition: all 0.3s ease 0s;
+}
+
+.button {
+    margin-top: 6vh;
+    border: none;
+    width: 13vw;
+    height: 6vh;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+
+}
+
+.button:focus {
+    outline: none;
+}
+
+.quote {
+
+    border-radius: 30px;
+    margin-top: 6vh;
+    padding: 5vh 20vw;
+    font-size: 2em;
+    text-align: center;
+    color: whitesmoke;
+    transition: all 0.3s ease 0s;
+}
+
+.author {
+    padding-top: 10vh;
+    color: whitesmoke;
+    font-size: 1.2em;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 600px) {
+    .button {
+        width: 30vw;
+    }
+}
